@@ -1,0 +1,112 @@
+:root{
+    --fonts:Arial, Helvetica, sans-serif;
+    --h-screen-size:100vh;
+    --w-screen-size:100vw;
+    --shade-color:rgba(27, 27, 27, 0.733);
+    --sidebar-bg:rgb(63, 66, 63);
+    --header-bg:rgb(30, 123, 30);
+    --header-links:rgb(235, 235, 235);
+    --links:rgb(42, 107, 163);
+    --regular-gap:40px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: var(--w-screen-size);
+    height: var(--h-screen-size);
+}
+.title{
+    font-size: 30px;
+    font-weight: 700;
+}
+a,a:visited{
+    text-decoration: none;
+    color: var(--links);
+}
+ul,li{
+    list-style-type: none;
+}
+div.buttons > a{
+    text-transform: capitalize;
+    color: var(--header-links);
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.buttons{
+    display:inline-flex;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:var(--regular-gap);   
+    background: var(--header-bg);
+
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left:84.5%;
+    float: right;
+    row-gap: 20px;
+
+    padding: 10px;
+
+    box-shadow: -2px 2px 3px rgb(0, 0, 0);
+    background: var(--sidebar-bg);
+    height: var(--h-screen-size);
+    width: 5cm;
+}
+div.sidebar{
+    display: none;
+}
+a.sidebarlinks{
+    font-size: large;
+    color: var(--header-links);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.shade{
+    position: absolute;
+    background: var(--shade-color);
+    width: var(--w-screen-size);
+    height: var(--h-screen-size);
+    z-index: 0;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+.title{
+    font-size:x-large;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.table{
+    padding-left: 30px;
+} 
+.main-font{
+    font-size: 11.5px;
+    color: rgb(14, 14, 14);
+    padding: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: var(--sidebar-bg);
+    gap: var(--regular-gap);
+
+    box-shadow: 0px -1px 10px rgb(0, 0, 0);
+    height: 25vh;
+    padding: 15px;
+}

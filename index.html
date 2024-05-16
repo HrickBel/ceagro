@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="site de assistencia à calouros do curso de agronomia da ufra">
+    <meta name="Instituicao" content="UFRA">
+    <meta name="organizacao" content="ceagro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/stylesheet/normalize.css">
+    <link rel="stylesheet" href="public/stylesheet/stylesheet.css">
+    <link rel="shortcut icon" href="public/images/logo.ico" type="image/x-icon">
+    <title>Ceagro - Home</title>
+</head>
+<body>
+    <div class="header">
+        <img src="public/images/logo3.png" alt="agronomia">
+        <div class="buttons">
+            <a href="index.html">inicio</a>
+            <a href="arquivos.htm">arquivos</a>
+            <a href="https://ead.senar.org.br/cursos">cursos</a>
+            <a ><img src="public/images/mor.png" alt="more" onclick="openSidebar()" width="20px" height="20px"></a>
+        </div>
+    </div>
+    <div class="shade" onclick="closeSidebar()" hidden></div>
+    <div class="sidebar" >
+        <a class="sidebarlinks" href="arquivos.htm">arquivos</a>
+        <a class="sidebarlinks" href="https://ead.senar.org.br/cursos">cursos</a>
+    </div>
+    <p class="title">Apresentação de curso</p>
+    <section class="hero" id="sobre">
+        <img src="public/images/logo2.png" alt="hero">
+        <p class="main-font">O Curso de Agronomia tem por compromisso desenvolver o respeito à fauna e à flora; a conservação e recuperação da qualidade do solo, do ar e da água; o uso tecnológico racional, integrado e sustentável do ambiente; o emprego de raciocínio reflexivo, crítico e criativo e o atendimento às expectativas humanas e sociais no exercício das atividades profissionais. Em atendimento às demandas da sociedade, deve considerar os aspectos políticos, econômicos, sociais, ambientais e culturais, com visão ética e humanística. Deve formar profissionais aptos a compreender e traduzir as necessidades de indivíduos, grupos sociais e comunidade, com relação aos problemas tecnológicos, socioeconômicos, gerenciais e organizativos, bem como utilizar racionalmente os recursos disponíveis, além de conservar o equilíbrio do ambiente.</p>
+    </section>
+    <p class="title">estrutura curricular</p>
+    <table class="table">
+        <tr>
+            <th><b>Atividades</b></th>
+            <th><b>Carga Horaria(CH)</b></th>
+        </tr>
+        <tr>
+            <td>
+                <p>Eixos Temáticos</p>
+            </td>
+            <td>
+                <p>3808</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Disciplinas eletivas</p>
+            </td>
+            <td>
+                <p>272</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Trabalho de conclusão de curso (TCC)</p>
+            </td>
+            <td>
+                <p>102</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Estágio supervisionado Obrigatório</p>
+            </td>
+            <td>
+                <p>120</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Atividades complementares</p>
+            </td>
+            <td>
+                <p>200</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>carga horária total total</b>
+            </td>
+            <td>
+                <b>4502</b  >
+            </td>
+        </tr>
+    </table>
+    <div>
+        <p class="title" onclick="expand(`#1`)">matriz curricular</p>
+        <ul id="1" value="hide" hidden>
+            <li><a href="https://cca.ufra.edu.br/images/PDF/MATRIZ_CURRICULAR_AGRONOMIA_atualizada_em_08012015.pdf">Grade curricular</a></li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>contatos</h3>
+            <p><a href="https://www.instagram.com/ceagro.belem/">@ceagro.belem</a></p>
+        </div>
+        <div class="footer-content">
+            <h3>informações</h3>
+            <p><a href="https://cca.ufra.edu.br/">coordenação de agronomia</a></p>
+            <p><a href="https://proen.ufra.edu.br/">PROEN</a></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="public/scripts/index.js"></script>
+</body>
+</html>
